@@ -9899,3 +9899,14 @@ display: block;
 .dropdown-menu {
   z-index: 9999 !important;
 }
+.link-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .link-container {
+    flex-direction: column;
+  }
+}
