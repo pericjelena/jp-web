@@ -9871,3 +9871,28 @@ display: block;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+.intro-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.intro-logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.intro-text h2 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.intro-text p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 0 10px;
+}
