@@ -179,6 +179,29 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
   <script src="app.js" defer></script>
-    
+
+	  <script>
+  $(document).ready(function () {
+    // Collapse navbar when a nav-link is clicked
+    $('.navbar-nav .nav-link').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
+
+    // Collapse navbar when clicking outside
+    $(document).on('click', function (event) {
+      var target = $(event.target);
+      var isNavbarOpen = $('.navbar-collapse').hasClass('show');
+      var clickedOutside = !target.closest('.navbar-collapse').length && !target.closest('.navbar-toggler').length;
+
+      if (isNavbarOpen && clickedOutside) {
+        $('.navbar-collapse').collapse('hide');
+      }
+    });
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </body>
 </html>
