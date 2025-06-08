@@ -9711,10 +9711,14 @@ html, body {
   color: #4d4d4d;           
 }
 
-.fa-language .fa-school .fa-chalkboard .fa-graduation-cap{
+.fa-language,
+.fa-school,
+.fa-chalkboard,
+.fa-graduation-cap {
   font-size: 50px;
   display: inline-block;
   text-align: center;
+  margin-left: 10px;
 }
 .slide-show{
 	min-height: 95px;
@@ -9908,5 +9912,26 @@ display: block;
 @media (max-width: 600px) {
   .link-container {
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .icon-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .icon-container a {
+    margin-left: 10px;
+    font-size: 24px; /* optional: adjust icon size */
+    z-index: 2;
+    position: relative;
+  }
+
+  /* Optional: Fix overlapping if the icons are inside a container */
+  .icon-container i {
+    pointer-events: auto;
   }
 }
